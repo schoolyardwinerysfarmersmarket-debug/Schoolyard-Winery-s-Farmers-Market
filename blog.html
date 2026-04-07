@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Market Blog | Schoolyard Winery's Farmers Market</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <nav class="site-nav">
+    <a href="/" class="nav-logo">
+      <img src="logo-schoolyard.png" alt="Schoolyard Winery">
+      <span class="nav-logo-text">Schoolyard Winery's<br>Farmers Market</span>
+    </a>
+    <button class="nav-toggle" aria-label="Toggle menu" onclick="document.querySelector('.nav-links').classList.toggle('open')">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="/">Home</a></li>
+      <li><a href="/vendors">Vendors</a></li>
+      <li><a href="/events">Events</a></li>
+      <li class="nav-dropdown">
+        <a href="#">Wine Menu</a>
+        <div class="dropdown-menu">
+          <a href="/wine-red">Red Wines</a>
+          <a href="/wine-white">White Wines</a>
+          <a href="/wine-specialty">Specialty &amp; Seasonal</a>
+        </div>
+      </li>
+      <li><a href="/bourbon">Bourbon Lounge</a></li>
+      <li><a href="/beer">Beer Cave</a></li>
+      <li><a href="/winery-events">At the Winery</a></li>
+      <li><a href="/gallery">Gallery</a></li>
+      <li><a href="/blog" class="active">Blog</a></li>
+      <li><a href="/contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="hero">
+    <img src="hero-summer.jpg" alt="Schoolyard Winery's Farmers Market">
+    <div class="hero-logo"><img src="logo-schoolyard.png" alt="Schoolyard Winery"></div>
+    <div class="hero-title">Schoolyard<br>Winery's Farmers<br>Market</div>
+  </div>
+
+  <main>
+
+    <h2 style="text-align:center; font-family:'Playfair Display',serif; color:var(--text); font-size:1.4rem; margin:1.25rem 0 2rem; font-weight:400; font-style:italic;">
+      The Market Blog
+    </h2>
+
+    <div style="text-align:center; padding:3rem 1rem;">
+      <p style="font-family:'Playfair Display',serif; font-size:1.8rem; line-height:1.5; color:var(--text);">
+        More to come —<br>Stay tuned!!
+      </p>
+      <p style="margin-top:1.5rem; color:var(--text-muted); font-size:0.9rem;">
+        In the meantime, follow us on <a href="https://www.facebook.com/share/1CQ35tfrSS/" target="_blank" rel="noopener">Facebook</a><br>for weekly market updates, vendor spotlights, and event news!
+      </p>
+    </div>
+
+  </main>
+
+  <footer>
+    <div class="footer-top">
+      <img src="logo-schoolyard.png" alt="Schoolyard Winery">
+      <span>Schoolyard Winery's Farmers Market</span>
+    </div>
+    <p>14923 Walton-Verona Road · Verona, Kentucky 41092</p>
+    <p><a href="mailto:SchoolyardWineryFarmersMarket@gmail.com">SchoolyardWineryFarmersMarket@gmail.com</a></p>
+    <p>Winery: (859) 814-4126 · <a href="mailto:VeronaWinery@gmail.com">VeronaWinery@gmail.com</a></p>
+  </footer>
+
+</body>
+</html>

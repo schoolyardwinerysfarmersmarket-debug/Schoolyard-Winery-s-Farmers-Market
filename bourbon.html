@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bourbon Lounge | Schoolyard Winery's Farmers Market</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <nav class="site-nav">
+    <a href="/" class="nav-logo">
+      <img src="logo-schoolyard.png" alt="Schoolyard Winery">
+      <span class="nav-logo-text">Schoolyard Winery's<br>Farmers Market</span>
+    </a>
+    <button class="nav-toggle" aria-label="Toggle menu" onclick="document.querySelector('.nav-links').classList.toggle('open')">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="/">Home</a></li>
+      <li><a href="/vendors">Vendors</a></li>
+      <li><a href="/events">Events</a></li>
+      <li class="nav-dropdown">
+        <a href="#">Wine Menu</a>
+        <div class="dropdown-menu">
+          <a href="/wine-red">Red Wines</a>
+          <a href="/wine-white">White Wines</a>
+          <a href="/wine-specialty">Specialty &amp; Seasonal</a>
+        </div>
+      </li>
+      <li><a href="/bourbon" class="active">Bourbon Lounge</a></li>
+      <li><a href="/beer">Beer Cave</a></li>
+      <li><a href="/winery-events">At the Winery</a></li>
+      <li><a href="/gallery">Gallery</a></li>
+      <li><a href="/blog">Blog</a></li>
+      <li><a href="/contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="hero">
+    <img src="hero-spring.jpg" alt="Schoolyard Winery">
+    <div class="hero-logo"><img src="logo-schoolyard.png" alt="Schoolyard Winery"></div>
+  </div>
+
+  <main>
+
+    <!-- Split photo panel — bourbon cocktail + bourbon with truffles -->
+    <div class="drink-split">
+      <div class="panel">
+        <!-- Upload: bourbon-cocktail.jpg (Old Fashioned with cherry) -->
+        <img src="bourbon-cocktail.jpg" alt="Old Fashioned Bourbon Cocktail">
+        <div class="overlay-text">
+          <span class="script dark" style="font-size:2rem; text-shadow:2px 2px 8px rgba(0,0,0,0.7); color:#fff;">The Bourbon<br>Lounge</span>
+        </div>
+      </div>
+      <div class="panel" style="background:#3a2a18;">
+        <!-- Upload: bourbon-glass.jpg (bourbon glass with truffles) -->
+        <img src="bourbon-glass.jpg" alt="Bourbon with chocolate truffles">
+      </div>
+    </div>
+
+    <!-- Menu items -->
+    <h2 style="text-align:center; color:var(--text); font-size:1.6rem; margin:1rem 0 0.25rem;">Old Fashion</h2>
+    <h2 style="text-align:center; color:var(--text); font-size:1.6rem; margin-bottom:0.25rem;">Bourbon Slush</h2>
+    <h2 style="text-align:center; color:var(--text); font-size:1.6rem; margin-bottom:1rem;">Bourbon By The Shot and More!!!</h2>
+
+    <div class="avail-note">
+      Check out the Bourbon Lounge at evening Market events and be sure to stop in to check out our host on Friday &amp; Saturday evenings!
+    </div>
+
+  </main>
+
+  <footer>
+    <div class="footer-top">
+      <img src="logo-schoolyard.png" alt="Schoolyard Winery">
+      <span>Schoolyard Winery's Farmers Market</span>
+    </div>
+    <p>14923 Walton-Verona Road · Verona, Kentucky 41092</p>
+    <p><a href="mailto:SchoolyardWineryFarmersMarket@gmail.com">SchoolyardWineryFarmersMarket@gmail.com</a></p>
+    <p>Winery: (859) 814-4126 · <a href="mailto:VeronaWinery@gmail.com">VeronaWinery@gmail.com</a></p>
+  </footer>
+
+</body>
+</html>

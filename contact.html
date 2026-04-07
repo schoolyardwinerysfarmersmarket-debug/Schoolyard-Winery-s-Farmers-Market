@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Schoolyard Winery's Farmers Market</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <nav class="site-nav">
+    <a href="/" class="nav-logo">
+      <img src="logo-schoolyard.png" alt="Schoolyard Winery">
+      <span class="nav-logo-text">Schoolyard Winery's<br>Farmers Market</span>
+    </a>
+    <button class="nav-toggle" aria-label="Toggle menu" onclick="document.querySelector('.nav-links').classList.toggle('open')">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="/">Home</a></li>
+      <li><a href="/vendors">Vendors</a></li>
+      <li><a href="/events">Events</a></li>
+      <li class="nav-dropdown">
+        <a href="#">Wine Menu</a>
+        <div class="dropdown-menu">
+          <a href="/wine-red">Red Wines</a>
+          <a href="/wine-white">White Wines</a>
+          <a href="/wine-specialty">Specialty &amp; Seasonal</a>
+        </div>
+      </li>
+      <li><a href="/bourbon">Bourbon Lounge</a></li>
+      <li><a href="/beer">Beer Cave</a></li>
+      <li><a href="/winery-events">At the Winery</a></li>
+      <li><a href="/gallery">Gallery</a></li>
+      <li><a href="/blog">Blog</a></li>
+      <li><a href="/contact" class="active">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="hero">
+    <img src="hero-spring.jpg" alt="Schoolyard Winery">
+    <div class="hero-logo"><img src="logo-schoolyard.png" alt="Schoolyard Winery"></div>
+  </div>
+
+  <main>
+
+    <span class="script dark" style="text-align:center; font-size:2.2rem; margin:0.75rem 0 0.25rem;">How to Contact Us</span>
+
+    <div class="contact-block">
+      <p><strong>Schoolyard Winery's Farmers Market</strong></p>
+      <p>14923 Walton-Verona Road<br>Verona, Kentucky 41092</p>
+      <p><a href="mailto:SchoolyardWineryFarmersMarket@gmail.com">SchoolyardWineryFarmersMarket@gmail.com</a></p>
+      <hr style="margin:0.75rem auto; border:none; border-top:1px solid var(--border); width:60%;">
+      <p><strong>Schoolyard Winery</strong><br>
+      <a href="tel:8598144126">(859) 814-4126</a><br>
+      <a href="mailto:VeronaWinery@gmail.com">VeronaWinery@gmail.com</a></p>
+    </div>
+
+    <hr class="divider">
+
+    <span class="script dark" style="text-align:center; font-size:2rem; margin-bottom:0.5rem;">Special Event Scheduling</span>
+
+    <!-- AIRTABLE SPECIAL EVENT SCHEDULING FORM -->
+    <!-- Replace the placeholder below with your Airtable embed iframe -->
+    <div class="airtable-wrapper">
+      <div class="form-placeholder" style="min-height:520px; display:flex; align-items:center; justify-content:center; flex-direction:column; gap:0.5rem;">
+        📅 Special Event Scheduling Form<br><br>
+        <small>Paste your Airtable event scheduling form embed URL here.<br>
+        Replace this div with:<br>
+        &lt;iframe src="YOUR_AIRTABLE_EMBED_URL"&gt;&lt;/iframe&gt;</small>
+      </div>
+    </div>
+
+  </main>
+
+  <footer>
+    <div class="footer-top">
+      <img src="logo-schoolyard.png" alt="Schoolyard Winery">
+      <span>Schoolyard Winery's Farmers Market</span>
+    </div>
+    <p>14923 Walton-Verona Road · Verona, Kentucky 41092</p>
+    <p><a href="mailto:SchoolyardWineryFarmersMarket@gmail.com">SchoolyardWineryFarmersMarket@gmail.com</a></p>
+    <p>Winery: (859) 814-4126 · <a href="mailto:VeronaWinery@gmail.com">VeronaWinery@gmail.com</a></p>
+  </footer>
+
+</body>
+</html>

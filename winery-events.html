@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>At the Winery | Schoolyard Winery's Farmers Market</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <nav class="site-nav">
+    <a href="/" class="nav-logo">
+      <img src="logo-schoolyard.png" alt="Schoolyard Winery">
+      <span class="nav-logo-text">Schoolyard Winery's<br>Farmers Market</span>
+    </a>
+    <button class="nav-toggle" aria-label="Toggle menu" onclick="document.querySelector('.nav-links').classList.toggle('open')">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="/">Home</a></li>
+      <li><a href="/vendors">Vendors</a></li>
+      <li><a href="/events">Events</a></li>
+      <li class="nav-dropdown">
+        <a href="#">Wine Menu</a>
+        <div class="dropdown-menu">
+          <a href="/wine-red">Red Wines</a>
+          <a href="/wine-white">White Wines</a>
+          <a href="/wine-specialty">Specialty &amp; Seasonal</a>
+        </div>
+      </li>
+      <li><a href="/bourbon">Bourbon Lounge</a></li>
+      <li><a href="/beer">Beer Cave</a></li>
+      <li><a href="/winery-events" class="active">At the Winery</a></li>
+      <li><a href="/gallery">Gallery</a></li>
+      <li><a href="/blog">Blog</a></li>
+      <li><a href="/contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="hero">
+    <img src="hero-summer.jpg" alt="Schoolyard Winery's Farmers Market">
+    <div class="hero-logo"><img src="logo-schoolyard.png" alt="Schoolyard Winery"></div>
+    <div class="hero-title">Schoolyard<br>Winery's Farmers<br>Market</div>
+  </div>
+
+  <main>
+
+    <p style="font-family:'Playfair Display',serif; font-size:1.15rem; text-align:center; margin:1.25rem 0 0.75rem; font-style:italic;">
+      Did you know the winery also hosts<br><strong style="font-style:normal;">Cruise-In To the Schoolyard!</strong>
+    </p>
+
+    <!-- Upload: flyer-cruise-in.jpg -->
+    <div class="flyer-wrap" style="max-width:380px;">
+      <img src="flyer-cruise-in.jpg" alt="Cruise-In to the Schoolyard 2026">
+    </div>
+
+    <div style="background:var(--bg-card); border-radius:8px; padding:1rem 1.25rem; margin-bottom:1.5rem; border-left:4px solid var(--dark-red);">
+      <p style="margin:0; font-size:0.95rem;">
+        <strong>Every Third Thursday May through October!</strong><br>
+        May 21 · June 18 · July 16 · August 20 · September 17 · October 15, 2026<br>
+        5–8 PM · Live Music · Food Trucks<br>
+        Every Cruise-In we're hosting a split-the-pot drawing with half the proceeds going to the veteran cemetery in Williamstown!
+      </p>
+    </div>
+
+    <hr class="divider">
+
+    <p style="text-align:center; font-family:'Playfair Display',serif; font-size:1.2rem; margin-bottom:1rem;">
+      Or Belly Dance Classes?
+    </p>
+
+    <div style="background:var(--bg-card); border-radius:8px; padding:1.25rem; text-align:center; border:1px solid var(--border);">
+      <p style="font-family:'Playfair Display',serif; font-size:1.05rem; margin-bottom:0.4rem;">They also have a</p>
+      <ul style="list-style:none; font-size:1.05rem; line-height:2;">
+        <li><strong>Book Club</strong></li>
+        <li><strong>Painting Classes</strong></li>
+        <li><strong>Craft Nights</strong></li>
+        <li><strong>and More!!</strong></li>
+      </ul>
+    </div>
+
+    <p style="text-align:center; margin-top:1.5rem; font-size:0.9rem; color:var(--text-muted);">
+      Visit <a href="/about">Meet Our Host</a> to learn the full story of Schoolyard Winery.<br>
+      <a href="/contact">Contact us</a> to inquire about private events.
+    </p>
+
+  </main>
+
+  <footer>
+    <div class="footer-top">
+      <img src="logo-schoolyard.png" alt="Schoolyard Winery">
+      <span>Schoolyard Winery's Farmers Market</span>
+    </div>
+    <p>14923 Walton-Verona Road · Verona, Kentucky 41092</p>
+    <p><a href="mailto:SchoolyardWineryFarmersMarket@gmail.com">SchoolyardWineryFarmersMarket@gmail.com</a></p>
+    <p>Winery: (859) 814-4126 · <a href="mailto:VeronaWinery@gmail.com">VeronaWinery@gmail.com</a></p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Photo Gallery | Schoolyard Winery's Farmers Market</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <nav class="site-nav">
+    <a href="/" class="nav-logo">
+      <img src="logo-schoolyard.png" alt="Schoolyard Winery">
+      <span class="nav-logo-text">Schoolyard Winery's<br>Farmers Market</span>
+    </a>
+    <button class="nav-toggle" aria-label="Toggle menu" onclick="document.querySelector('.nav-links').classList.toggle('open')">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="/">Home</a></li>
+      <li><a href="/vendors">Vendors</a></li>
+      <li><a href="/events">Events</a></li>
+      <li class="nav-dropdown">
+        <a href="#">Wine Menu</a>
+        <div class="dropdown-menu">
+          <a href="/wine-red">Red Wines</a>
+          <a href="/wine-white">White Wines</a>
+          <a href="/wine-specialty">Specialty &amp; Seasonal</a>
+        </div>
+      </li>
+      <li><a href="/bourbon">Bourbon Lounge</a></li>
+      <li><a href="/beer">Beer Cave</a></li>
+      <li><a href="/winery-events">At the Winery</a></li>
+      <li><a href="/gallery" class="active">Gallery</a></li>
+      <li><a href="/blog">Blog</a></li>
+      <li><a href="/contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="hero">
+    <img src="hero-spring.jpg" alt="Schoolyard Winery">
+    <div class="hero-logo"><img src="logo-schoolyard.png" alt="Schoolyard Winery"></div>
+  </div>
+
+  <main>
+
+    <span class="script dark" style="text-align:center; font-size:2.2rem; margin:0.75rem 0 1rem;">Market and Winery Photo Gallery</span>
+
+    <!--
+      IMAGE UPLOAD GUIDE FOR GALLERY:
+      Name your photos: gallery-01.jpg, gallery-02.jpg, etc.
+      Upload them to GitHub and they will appear here automatically.
+      
+      From your Canva gallery I can see these types of photos:
+      gallery-01.jpg  — Aerial drone shot of winery property
+      gallery-02.jpg  — B&W portrait (man)
+      gallery-03.jpg  — Interior hanging decor / market stalls
+      gallery-04.jpg  — Remembering Woodstock 2024 crowd
+      gallery-05.jpg  — Historic school building sign (Verona High School)
+      gallery-06.jpg  — Vineyard rows
+      gallery-07.jpg  — Landscape / grounds
+      gallery-08.jpg  — Bonfire
+      gallery-09.jpg  — Belly dance performance on lawn
+      gallery-10.jpg  — Woman in Hawaiian lei
+      gallery-11.jpg  — Charcuterie board
+      gallery-12.jpg  — Vendor tent (Prism Smoke or similar)
+      gallery-13.jpg  — Vendor tents at market
+      gallery-14.jpg  — Belly dancers performing (wide group shot)
+      gallery-15.jpg  — Elderly couple watching performance
+      gallery-16.jpg  — Building at night / lit up
+      gallery-17.jpg  — Two women posing (Chris + friend)
+      gallery-18.jpg  — Peace, Love & Wine VW van
+      gallery-19.jpg  — Night crowd / outdoor seating
+      gallery-20.jpg  — Hippie-dressed woman
+      gallery-21.jpg  — Family at market
+      gallery-22.jpg  — Kids at market
+      gallery-23.jpg  — Market overview / vendor tents (aerial-ish)
+      gallery-24.jpg  — Market with building in background
+      gallery-25.jpg  — Building exterior (different angle)
+    -->
+
+    <div class="gallery-grid">
+
+      <!-- Row 1: aerial (wide) + b&w portrait + interior -->
+      <div class="g-item wide">
+        <img src="gallery-01.jpg" alt="Aerial view of Schoolyard Winery property" onerror="this.parentElement.classList.add('ph'); this.remove(); this.parentElement.textContent='gallery-01.jpg';">
+      </div>
+      <div class="g-item">
+        <img src="gallery-02.jpg" alt="Winery portrait" onerror="this.parentElement.classList.add('ph'); this.remove(); this.parentElement.textContent='gallery-02.jpg';">
+      </div>
+
+      <!-- Row 1 continued: interior + Woodstock event -->
+      <div class="g-item">
+        <img src="gallery-03.jpg" alt="Market interior decor" onerror="this.parentElement.classList.add('ph'); this.remove(); this.parentElement.textContent='gallery-03.jpg';">
+      </div>
+      <div class="g-item wide">
+        <img src="gallery-04.jpg" alt="Remembering Woodstock 2024" onerror="this.parentElement.classList.add('ph'); this.remove(); this.parentElement.textContent='gallery-04.jpg';">
+      </div>
+
+      <!-- Row 2: building sign + vineyard + landscape -->
+      <div class="g-item">
+        <img src="gallery-05.jpg" alt="Verona High School historic sign" onerror="this.parentElement.classList.add('ph'); this.remove(); this.parentElement.textContent='gallery-05.jpg';">
+      </div>
+      <div class="g-item">
+        <img src="gallery-06.jpg" alt="Vineyard rows at Schoolyard Winery" onerror="this.parentElement.classList.add('ph'); this.remove(); this.parentElement.textContent='gallery-06.jpg';">
+      </div>
+      <div class="g-item">
+        <img src="gallery-07.jpg" alt="Winery grounds" onerror="this.parentElement.classList.add('ph'); this.remove(); this.parentElement.textContent='gallery-07.jpg';">
+      </div>
+
+      <!-- Row 3: bonfire (wide) + belly dance -->
+      <div class="g-item wide">
+        <img src="gallery-08.jpg" alt="Bonfire at the Schoolyard" onerror="this.parentElement.classList.add('ph'); this.remove(); this.parentElement.textContent='gallery-08.jpg';">
+      </div>
+      <div class="g-item">
+        <img src="gallery-09.jpg" alt="Belly dance performance" onerror="this.parentElement.classList.add('ph'); this.remove(); this.parentElement.textContent='gallery-09.jpg';">
+      </div>
+
+      <!-- Row 4: lei + charcuterie + vendor tent -->
+      <div class="g-item">
+        <img src="gallery-10.jpg" alt="Hawaiian lei event" onerror="this.parentElement.classList.add('ph'); this.remove(); this.parentElement.textContent='gallery-10.jpg';">
+      </div>
+      <div class="g-item">
+        <img src="gallery-11.jpg" alt="Charcuterie board" onerror="this.parentElement.classList.add('ph'); this.remove(); this.parentElement.textContent='gallery-11.jpg';">
+      </div>
+      <div class="g-item">
+        <img src="gallery-12.jpg" alt="Vendor tent at market" onerror="this.parentElement.classList.add('ph'); this.remove(); this.parentElement.textContent='gallery-12.jpg';">
+      </div>
+
+      <!-- Row 5: wide belly dance group shot -->
+      <div class="g-item wide">
+        <img src="gallery-14.jpg" alt="Belly dancers performing on the lawn" onerror="this.parentElement.classList.add('ph'); this.remove(); this.parentElement.textContent='gallery-14.jpg';">
+      </div>
+      <div class="g-item">
+        <img src="gallery-13.jpg" alt="Market vendor tents" onerror="this.parentElement.classList.add('ph'); this.remove(); this.parentElement.textContent='gallery-13.jpg';">
+      </div>
+
+      <!-- Row 6: elderly couple + building at night + two women -->
+      <div class="g-item">
+        <img src="gallery-15.jpg" alt="Guests enjoying the market" onerror="this.parentElement.classList.add('ph'); this.remove(); this.parentElement.textContent='gallery-15.jpg';">
+      </div>
+      <div class="g-item">
+        <img src="gallery-16.jpg" alt="Schoolyard Winery lit up at night" onerror="this.parentElement.classList.add('ph'); this.remove(); this.parentElement.textContent='gallery-16.jpg';">
+      </div>
+      <div class="g-item">
+        <img src="gallery-17.jpg" alt="Friends at the market" onerror="this.parentElement.classList.add('ph'); this.remove(); this.parentElement.textContent='gallery-17.jpg';">
+      </div>
+
+      <!-- Row 7: VW van (wide) + night crowd -->
+      <div class="g-item wide">
+        <img src="gallery-18.jpg" alt="Peace Love and Wine VW van" onerror="this.parentElement.classList.add('ph'); this.remove(); this.parentElement.textContent='gallery-18.jpg';">
+      </div>
+      <div class="g-item">
+        <img src="gallery-19.jpg" alt="Evening event crowd" onerror="this.parentElement.classList.add('ph'); this.remove(); this.parentElement.textContent='gallery-19.jpg';">
+      </div>
+
+      <!-- Row 8: hippie woman + family + kids -->
+      <div class="g-item">
+        <img src="gallery-20.jpg" alt="Woodstock event" onerror="this.parentElement.classList.add('ph'); this.remove(); this.parentElement.textContent='gallery-20.jpg';">
+      </div>
+      <div class="g-item">
+        <img src="gallery-21.jpg" alt="Family at the market" onerror="this.parentElement.classList.add('ph'); this.remove(); this.parentElement.textContent='gallery-21.jpg';">
+      </div>
+      <div class="g-item">
+        <img src="gallery-22.jpg" alt="Kids at the market" onerror="this.parentElement.classList.add('ph'); this.remove(); this.parentElement.textContent='gallery-22.jpg';">
+      </div>
+
+      <!-- Row 9: market overview + building exterior shots -->
+      <div class="g-item wide">
+        <img src="gallery-23.jpg" alt="Market overview with vendor tents" onerror="this.parentElement.classList.add('ph'); this.remove(); this.parentElement.textContent='gallery-23.jpg';">
+      </div>
+      <div class="g-item">
+        <img src="gallery-24.jpg" alt="Market scene" onerror="this.parentElement.classList.add('ph'); this.remove(); this.parentElement.textContent='gallery-24.jpg';">
+      </div>
+
+      <!-- Row 10: two building shots -->
+      <div class="g-item">
+        <img src="gallery-25.jpg" alt="Schoolyard Winery building" onerror="this.parentElement.classList.add('ph'); this.remove(); this.parentElement.textContent='gallery-25.jpg';">
+      </div>
+      <div class="g-item ph">Add more photos here</div>
+      <div class="g-item ph">Add more photos here</div>
+
+    </div>
+
+    <p style="text-align:center; margin-top:1.5rem; font-size:0.85rem; color:var(--text-muted);">
+      Follow us on <a href="https://www.facebook.com/share/1CQ35tfrSS/" target="_blank" rel="noopener">Facebook</a> for weekly photos and updates!
+    </p>
+
+  </main>
+
+  <footer>
+    <div class="footer-top">
+      <img src="logo-schoolyard.png" alt="Schoolyard Winery">
+      <span>Schoolyard Winery's Farmers Market</span>
+    </div>
+    <p>14923 Walton-Verona Road · Verona, Kentucky 41092</p>
+    <p><a href="mailto:SchoolyardWineryFarmersMarket@gmail.com">SchoolyardWineryFarmersMarket@gmail.com</a></p>
+    <p>Winery: (859) 814-4126 · <a href="mailto:VeronaWinery@gmail.com">VeronaWinery@gmail.com</a></p>
+  </footer>
+
+</body>
+</html>

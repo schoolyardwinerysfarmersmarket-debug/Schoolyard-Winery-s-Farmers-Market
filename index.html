@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Schoolyard Winery's Farmers Market — Verona, Kentucky</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="site-nav">
+    <a href="/" class="nav-logo">
+      <img src="logo-schoolyard.png" alt="Schoolyard Winery">
+      <span class="nav-logo-text">Schoolyard Winery's<br>Farmers Market</span>
+    </a>
+    <button class="nav-toggle" aria-label="Toggle menu" onclick="document.querySelector('.nav-links').classList.toggle('open')">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="/" class="active">Home</a></li>
+      <li><a href="/vendors">Vendors</a></li>
+      <li><a href="/events">Events</a></li>
+      <li class="nav-dropdown">
+        <a href="#">Wine Menu</a>
+        <div class="dropdown-menu">
+          <a href="/wine-red">Red Wines</a>
+          <a href="/wine-white">White Wines</a>
+          <a href="/wine-specialty">Specialty &amp; Seasonal</a>
+        </div>
+      </li>
+      <li><a href="/bourbon">Bourbon Lounge</a></li>
+      <li><a href="/beer">Beer Cave</a></li>
+      <li><a href="/winery-events">At the Winery</a></li>
+      <li><a href="/gallery">Gallery</a></li>
+      <li><a href="/blog">Blog</a></li>
+      <li><a href="/contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <div class="hero">
+    <!-- Upload: hero-summer.jpg (the market in full swing — tents, people, building) -->
+    <img src="hero-summer.jpg" alt="Schoolyard Winery's Farmers Market in Verona Kentucky">
+    <div class="hero-logo">
+      <img src="logo-schoolyard.png" alt="Schoolyard Winery">
+    </div>
+    <div class="hero-title">Schoolyard<br>Winery's Farmers<br>Market</div>
+  </div>
+
+  <!-- MAIN -->
+  <main>
+
+    <!-- Schedule -->
+    <div class="schedule-banner">
+      <h1>Saturday's Starting May 2nd &nbsp;10am – 1pm &amp;<br>Every Third Saturday of the Month 4pm – 7pm Only!</h1>
+      <p class="fb-line">Season's schedule and weekly vendor list — follow us on <a href="https://www.facebook.com/share/1CQ35tfrSS/" target="_blank" rel="noopener">Facebook</a>!</p>
+    </div>
+
+    <!-- Offerings -->
+    <ul class="offerings-list">
+      <li>🍯 Local Honey</li>
+      <li>🌿 Local Grown Farm Items (seasonal)</li>
+      <li>🧁🍞 Homemade Baked Goods</li>
+      <li>🌱 All Natural Herbal Bath and Body Products</li>
+      <li>🌿 Herbalist</li>
+      <li>🟪 Artisan Items</li>
+      <li>🍷 Wine Sampling</li>
+      <li>🛍️ Special Market Shopping Events</li>
+      <li>🎸 Starting out local musicians' always welcome and so much more!</li>
+    </ul>
+
+    <hr class="divider">
+
+    <!-- Welcome Text -->
+    <div class="welcome-text">
+      <p>Welcome to Verona, Kentucky's hometown open-air market — hosted by Schoolyard Winery. Click <a href="/about">here</a> to learn more about the winery we call home.</p>
+      <p>We provide a fun, relaxed setting where local youth entrepreneurs, farmers, and artisans share their best products with the community. Join us most Saturday mornings from spring through fall, and attend our evening market every third Saturday of the month for those who can't make the early sessions.</p>
+      <p>Our offerings change throughout the year, so check back often for all your favorites.</p>
+    </div>
+
+    <hr class="divider">
+
+    <!-- Vendor Application -->
+    <p class="vendor-callout">We are always accepting vendors including youth, handmade, homemade, farm made, farm grown, and more.</p>
+    <p class="vendor-sub">If you're interested in being a vendor, submit this form:</p>
+
+    <!-- AIRTABLE VENDOR FORM — paste your embed URL between the quotes in src="" below -->
+    <div class="airtable-wrapper">
+      <div class="form-placeholder">
+        📋 Vendor Application Form<br><br>
+        <small>Paste your Airtable vendor form embed URL here.<br>
+        Replace this div with:<br>
+        &lt;iframe src="YOUR_AIRTABLE_EMBED_URL"&gt;&lt;/iframe&gt;</small>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-top">
+      <img src="logo-schoolyard.png" alt="Schoolyard Winery">
+      <span>Schoolyard Winery's Farmers Market</span>
+    </div>
+    <p>14923 Walton-Verona Road · Verona, Kentucky 41092</p>
+    <p><a href="mailto:SchoolyardWineryFarmersMarket@gmail.com">SchoolyardWineryFarmersMarket@gmail.com</a></p>
+    <p>Winery: (859) 814-4126 · <a href="mailto:VeronaWinery@gmail.com">VeronaWinery@gmail.com</a></p>
+  </footer>
+
+</body>
+</html>

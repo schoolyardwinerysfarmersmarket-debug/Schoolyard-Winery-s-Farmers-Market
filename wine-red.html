@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Red Wines | Schoolyard Winery's Farmers Market</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <nav class="site-nav">
+    <a href="/" class="nav-logo">
+      <img src="logo-schoolyard.png" alt="Schoolyard Winery">
+      <span class="nav-logo-text">Schoolyard Winery's<br>Farmers Market</span>
+    </a>
+    <button class="nav-toggle" aria-label="Toggle menu" onclick="document.querySelector('.nav-links').classList.toggle('open')">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="/">Home</a></li>
+      <li><a href="/vendors">Vendors</a></li>
+      <li><a href="/events">Events</a></li>
+      <li class="nav-dropdown">
+        <a href="#" class="active">Wine Menu</a>
+        <div class="dropdown-menu">
+          <a href="/wine-red" class="active">Red Wines</a>
+          <a href="/wine-white">White Wines</a>
+          <a href="/wine-specialty">Specialty &amp; Seasonal</a>
+        </div>
+      </li>
+      <li><a href="/bourbon">Bourbon Lounge</a></li>
+      <li><a href="/beer">Beer Cave</a></li>
+      <li><a href="/winery-events">At the Winery</a></li>
+      <li><a href="/gallery">Gallery</a></li>
+      <li><a href="/blog">Blog</a></li>
+      <li><a href="/contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="hero">
+    <img src="hero-spring.jpg" alt="Schoolyard Winery">
+    <div class="hero-logo"><img src="logo-schoolyard.png" alt="Schoolyard Winery"></div>
+  </div>
+
+  <main>
+
+    <div class="wine-section-heading">
+      <span class="script red">Farmers Market Sampler List</span>
+      <h1>Red Wines</h1>
+    </div>
+
+    <div class="wine-tabs">
+      <a href="/wine-red" class="active">Red Wines</a>
+      <a href="/wine-white">White Wines</a>
+      <a href="/wine-specialty">Specialty &amp; Seasonal</a>
+    </div>
+
+    <div class="wine-entry">
+      <h3>Schoolhouse Red (Cab. Sauv.)</h3>
+      <p>Notes of black currant and cherries that will instantly remind you of your first real crush. This dry, full-bodied red wine has curves for days. Now all you have to do is work up the courage to ask her out!</p>
+    </div>
+
+    <div class="wine-entry">
+      <h3>Principal (Cab. Franc)</h3>
+      <p>Turn between being cool and running the proverbial tight ship, the Principal can be found in the office alone at the end of a long, hard school day drinking Cab Franc with tomato soup and grilled cheese! This wine has notes of raspberry, bramble, and bell pepper combined to create a complex wine that honors this mythical man.</p>
+    </div>
+
+    <div class="wine-entry empty">
+      <h3>French Class (Malbec)</h3>
+      <p style="color:var(--text-muted); font-style:italic;">Description coming soon — check back!</p>
+    </div>
+
+    <div class="wine-entry">
+      <h3>Honor Roll (Merlot)</h3>
+      <p>Pull back the curtain, it's time to reveal the names at the top of the list! This soft, lush red wine celebrates your every accomplishment with velvety notes of plum and blueberry. Have a glass (or bottle) and take a bow!</p>
+    </div>
+
+    <div class="wine-entry">
+      <h3>Homecoming (Chambourcin)</h3>
+      <p>If you weren't dating the basketball team captain or the head cheerleader, you likely weren't in the running for king or queen. You may have skipped this one altogether. The strong herbaceous flavors and modest tanning of this crisp red wine are your second chance at the crown!!</p>
+    </div>
+
+    <div class="wine-entry">
+      <h3>Class Clown Red Blend</h3>
+      <p>As we all know there was one in every class. Sitting there making faces and spit balls! They were always causing waves of laughter behind the teacher's back! The class clown made standard testing tolerable with practical jokes and distractions galore. Keep your eyes on the prize, and your butt out of the office with a glass of this racey wine spiked with a healthy dose of good, clean fun!</p>
+    </div>
+
+    <div class="wine-entry">
+      <h3>Sweet Victory (Pinot Noir)</h3>
+      <p>This red wine is sweet and unexpected — like stealing from your parents' liquor cabinet… <strong>Only Better!</strong> It's light-bodied with a loooong smooth finish. This wine's notes of cherry, raspberry, and hibiscus taste like sweet victory; while the harder-to-detect hints of cloves and mushroom likely merit further investigation. Drink this one chilled to perfection!!</p>
+    </div>
+
+    <span class="samples-vary">Samples Vary At Each Market!!!</span>
+
+  </main>
+
+  <footer>
+    <div class="footer-top">
+      <img src="logo-schoolyard.png" alt="Schoolyard Winery">
+      <span>Schoolyard Winery's Farmers Market</span>
+    </div>
+    <p>14923 Walton-Verona Road · Verona, Kentucky 41092</p>
+    <p><a href="mailto:SchoolyardWineryFarmersMarket@gmail.com">SchoolyardWineryFarmersMarket@gmail.com</a></p>
+    <p>Winery: (859) 814-4126 · <a href="mailto:VeronaWinery@gmail.com">VeronaWinery@gmail.com</a></p>
+  </footer>
+
+</body>
+</html>
